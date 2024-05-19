@@ -3,18 +3,39 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
 import Tech from "./components/Tech";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 function App() {
   return (
-    <div className=" dark:bg-white dark:text-black overflow-x-hidden text-neutral-300 antialiased">
+    <div className=" dark:bg-white dark:text-black overflow-x-hidden text-neutral-300 antialiased scroll-smooth">
       <div className=" fixed top-0 -z-10 h-full w-full"></div>
       <div className="fixed top-0 z-[-2] h-screen w-full bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] "></div>
+      <Navbar />
 
-      <div className=" container mx-auto px-12">
-        <Navbar />
-        <Home />
+      <div className=" container mx-auto px-8 md:px-12">
+        <div className="hidden lg:block">
+          <br />
+          <br />
+        </div>
+
+        <br />
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/tech" element={<Tech />}></Route>
+          <Route path="/projects" element={<Projects />}></Route>
+
+          {/* <Route path="/contact" element={<Contact />}></Route> */}
+        </Routes>
+        {/* <Home /> */}
         <About />
+
         <Tech />
+        <br />
+        <h2 className=" flex justify-center text-4xl">Projects</h2>
+        <Projects />
+        <Contact />
       </div>
     </div>
   );
