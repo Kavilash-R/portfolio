@@ -5,7 +5,7 @@ import { CiMail } from "react-icons/ci";
 
 const Contact = () => {
   return (
-    <div className="border-b border-neutral-900 pb-14">
+    <div id="contact" className="border-b border-neutral-900 pb-14">
       <h2 className="my-10 text-center text-4xl">Get in Touch</h2>
       <div className="text-center tracking-wide">
         <div className="flex justify-center gap-7 ">

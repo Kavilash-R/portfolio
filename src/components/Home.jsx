@@ -2,12 +2,18 @@ import React from "react";
 import { HERO_CONTENT } from "../constants";
 import profilePic from "../assets/kevinRushProfile.png";
 import { motion } from "framer-motion";
+import { FiGithub } from "react-icons/fi";
+import { FaLinkedinIn } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
 
 const Home = () => {
   return (
-    <div className="border-b border-neutral-900 pb-4 lg:mb-[140px] mt-[80px]">
+    <div
+      id="home"
+      className="border-b border-neutral-900 pb-4 lg:mb-[140px] mt-[80px]"
+    >
       <div className="flex flex-wrap">
-        <div className="w-full lg:w-1/2">
+        <div className="w-full  lg:w-1/2">
           <div className="flex flex-col items-center lg:items-start">
             <motion.h1
               initial={{ x: -100, opacity: 0 }}
@@ -36,15 +42,32 @@ const Home = () => {
             </motion.p>
           </div>
         </div>
-        <div className="w-full lg:w-1/2 lg:p-8">
-          <div className="flex  justify-center ">
-            <motion.img
+        {/* <div className="  hidden lg:block">
+          <div className="flex w-1/2 flex-col justify-end ">
+            <div>gi</div>
+            <div>li</div>
+          </div>
+        </div> */}
+        <div className="hidden lg:block w-full lg:w-1/2 lg:p-8">
+          <div className="flex flex-col h-full  items-end justify-center gap-5">
+            <motion.div
               initial={{ x: 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 1.5 }}
-              src={profilePic}
-              alt=""
-            />
+            >
+              <a href="https://github.com/Kavilash-R">
+                <FiGithub className="size-7 cursor-pointer hover:text-teal-700" />
+              </a>
+            </motion.div>
+            <motion.div
+              initial={{ x: 100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.5, delay: 1.5 }}
+            >
+              <a href="https://www.linkedin.com/in/kavilash-ravi-2b5020234/">
+                <FaLinkedin className="size-7 cursor-pointer hover:text-teal-700" />
+              </a>
+            </motion.div>
           </div>
         </div>
       </div>

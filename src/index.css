@@ -8,6 +8,6 @@
   font-family: "Josefin+Sans", sans-serif;
 }
 
-#proj-nav {
-  scroll-behavior: smooth;
+.nav-item .active {
+  color: rgb(24, 203, 203);
 }
