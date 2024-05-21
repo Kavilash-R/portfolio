@@ -7,9 +7,11 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 
 function App() {
+  const lightTheme =
+    "absolute top-0 z-[-2] h-screen w-screen bg-white bg-[radial-gradient(100%_50%_at_50%_0%,rgba(0,163,255,0.13)_0,rgba(0,163,255,0)_50%,rgba(0,163,255,0)_100%)]";
   return (
     <div
-      className=" dark:bg-white
+      className="dark:bg-white
      dark:text-black overflow-x-hidden text-neutral-300 antialiased scroll-smooth"
     >
       <div className=" fixed top-0 -z-10 h-full w-full"></div>

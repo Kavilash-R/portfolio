@@ -32,6 +32,7 @@ const Navbar = () => {
   function toggleTheme() {
     document.documentElement.classList.toggle("dark");
   }
+
   return (
     <div className="dark:bg-gray-200 lg:fixed z-10 w-full px-8 md:px-14  top-0  bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] ">
       <nav className=" h-14 lg:h-[68px] flex items-center justify-between   ">
@@ -46,7 +47,7 @@ const Navbar = () => {
               smooth={true}
               offset={-100}
               duration={500}
-              className="hover:text-teal-200 hover:-translate-y-[0.100rem] hidden lg:block cursor-pointer"
+              className="dark:hover:text-blue-700 hover:text-teal-200 hover:-translate-y-[0.100rem] hidden lg:block cursor-pointer"
             >
               Home
             </Linked>
@@ -59,7 +60,7 @@ const Navbar = () => {
               smooth={true}
               offset={-100}
               duration={500}
-              className="hover:text-teal-200 hover:-translate-y-[0.100rem] hidden lg:block cursor-pointer"
+              className="dark:hover:text-blue-700 hover:text-teal-200 hover:-translate-y-[0.100rem] hidden lg:block cursor-pointer"
             >
               About
             </Linked>
@@ -72,7 +73,7 @@ const Navbar = () => {
               smooth={true}
               offset={-200}
               duration={500}
-              className=" scroll-smooth hover:text-teal-200 hover:-translate-y-[0.100rem] hidden lg:block cursor-pointer"
+              className=" scroll-smooth dark:hover:text-blue-700 hover:text-teal-200 hover:-translate-y-[0.100rem] hidden lg:block cursor-pointer"
             >
               Projects
             </Linked>
@@ -85,7 +86,7 @@ const Navbar = () => {
               smooth={true}
               offset={100}
               duration={500}
-              className="hover:text-teal-200 hover:-translate-y-[0.100rem] hidden lg:block cursor-pointer"
+              className="hover:text-teal-200 dark:hover:text-blue-700 hover:-translate-y-[0.100rem] hidden lg:block cursor-pointer"
             >
               Contact
             </Linked>
@@ -102,29 +103,35 @@ const Navbar = () => {
             </button>
           </div>
           {/* <IoMenu className=" cursor-pointer size-6 block lg:hidden" /> */}
-          <div
-            onClick={handleNav}
-            className="mr-6 cursor-pointer block lg:hidden "
-          >
+          <div onClick={handleNav} className=" cursor-pointer block lg:hidden ">
             {!nave ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
           </div>
           <div
             className={
               !nave
-                ? "w-[40%]  h-full fixed left-0 top-0 dark:bg-white bg-slate-950 ease-in-out duration-500 z-10 lg:hidden"
+                ? "w-[40%]  h-full fixed left-0 top-0 dark:bg-white bg-gray-950 ease-in-out duration-500 z-10 lg:hidden"
                 : "fixed left-[-100%] lg:hidden"
             }
           >
-            <Linked
-              to="home"
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={500}
-              className="flex justify-center  font-bold py-5 text-2xl underline"
-            >
-              Portfolio
-            </Linked>
+            <div className=" ">
+              {" "}
+              <Linked
+                to="home"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                className=" flex justify-center  font-bold py-5 text-2xl underline"
+              >
+                Portfolio
+                <AiOutlineClose
+                  className="flex ml-5 mt-2 cursor-pointer"
+                  size={20}
+                  onClick={handleNav}
+                />
+              </Linked>
+            </div>
+
             <ul className="p-4 h-[80%] flex flex-col  justify-center items-center">
               <Linked
                 to="home"

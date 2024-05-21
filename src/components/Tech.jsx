@@ -30,7 +30,7 @@ const Tech = () => {
     },
   });
   return (
-    <div className="border-b border-neutral-800 pb-24 ">
+    <div className="border-b  border-neutral-800 pb-24 ">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -40 }}
@@ -44,7 +44,7 @@ const Tech = () => {
           variants={iconvariants(2.5)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="rounded-2xl border-4 dark:border-gray-600 border-neutral-800 p-4"
         >
           {/* <FaHtml5 className="text-7xl text-orange-500" /> */}
           <img className=" size-[70px]" src={htmlIcon} alt="logo" />
@@ -53,7 +53,7 @@ const Tech = () => {
           variants={iconvariants(1.4)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="rounded-2xl border-4 dark:border-gray-600 border-neutral-800 p-4"
         >
           {/* <FaCss3Alt className="text-7xl text-cyan-400" /> */}
           <img className=" size-[70px]" src={cssIcon} alt="logo" />
@@ -62,7 +62,7 @@ const Tech = () => {
           variants={iconvariants(3)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="rounded-2xl border-4 dark:border-gray-600 border-neutral-800 p-4"
         >
           {/* <IoLogoJavascript className="text-7xl text-yellow-300" /> */}
           <img className=" size-[70px]" src={javascriptIcon} alt="logo" />
@@ -71,7 +71,7 @@ const Tech = () => {
           variants={iconvariants(5)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="rounded-2xl border-4 dark:border-gray-600 border-neutral-800 p-4"
         >
           {/* <FaJava className="text-7xl text-orange-400" /> */}
           <img className=" size-[70px]" src={javaIcon} alt="logo" />
@@ -80,7 +80,7 @@ const Tech = () => {
           variants={iconvariants(2.4)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="rounded-2xl border-4 dark:border-gray-600 border-neutral-800 p-4"
         >
           <RiTailwindCssFill className="text-7xl text-cyan-400" />
         </motion.div>
@@ -88,7 +88,7 @@ const Tech = () => {
           variants={iconvariants(4)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="rounded-2xl border-4 dark:border-gray-600 border-neutral-800 p-4"
         >
           <RiReactjsFill className="text-7xl text-cyan-400" />
         </motion.div>
@@ -96,7 +96,7 @@ const Tech = () => {
           variants={iconvariants(1.4)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="rounded-2xl border-4 dark:border-gray-600 border-neutral-800 p-4"
         >
           <FaNodeJs className="text-7xl text-green-500" />
         </motion.div>
@@ -104,7 +104,7 @@ const Tech = () => {
           variants={iconvariants(6)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="rounded-2xl border-4 dark:border-gray-600 border-neutral-800 p-4"
         >
           <SiExpress className="text-7xl " />
         </motion.div>
@@ -112,7 +112,7 @@ const Tech = () => {
           variants={iconvariants(2.4)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="rounded-2xl border-4 dark:border-gray-600 border-neutral-800 p-4"
         >
           <SiMongodb className="text-7xl text-green-500" />
         </motion.div>
@@ -120,7 +120,7 @@ const Tech = () => {
           variants={iconvariants(3)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="rounded-2xl border-4 dark:border-gray-600 border-neutral-800 p-4"
         >
           {/* <SiMongodb className="text-7xl text-green-500" /> */}
           <img className=" size-[70px]" src={mySql} alt="logo" />
