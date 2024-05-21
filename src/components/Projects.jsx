@@ -6,6 +6,7 @@ import Project2 from "../assets/chat-app.png";
 import Project3 from "../assets/pokemon-api.png";
 import Project4 from "../assets/portfolio1.png";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 const Projects = () => {
   return (
     <div id="projects" className="border-b border-neutral-800  ">
@@ -16,11 +17,13 @@ const Projects = () => {
           transition={{ duration: 0.8 }}
           className="  h-[300px] w-full md:w-[40%] mx-5 my-10 rounded-md"
         >
-          <img
-            className="h-[80%] w-full rounded-md shadow-lg"
-            src={Image}
-            alt=" cakes of paradise "
-          />
+          <Link to="/project1">
+            <img
+              className="h-[80%] w-full rounded-md shadow-lg"
+              src={Image}
+              alt=" cakes of paradise "
+            />
+          </Link>
           <br />
           <div className="flex justify-between">
             <div className="flex justify-start ">CAKES OF PARADISE</div>
@@ -41,11 +44,13 @@ const Projects = () => {
           transition={{ duration: 0.8 }}
           className="  h-[300px] w-[90%] md:w-[40%] mx-5  my-10 rounded-md"
         >
-          <img
-            className="h-[80%] w-full rounded-md shadow-lg"
-            src={Project2}
-            alt=" cakes of paradise "
-          />
+          <Link to="/project2">
+            <img
+              className="h-[80%] w-full rounded-md shadow-lg"
+              src={Project2}
+              alt=" cakes of paradise "
+            />
+          </Link>
           <br />
           <div className="flex justify-between">
             <div className="flex justify-start ">CHATTING-APP</div>
@@ -66,11 +71,15 @@ const Projects = () => {
           transition={{ duration: 0.8 }}
           className="  h-[300px] w-[90%] md:w-[40%] mx-5 my-10 rounded-md"
         >
-          <img
-            className="h-[80%] w-full rounded-md shadow-lg"
-            src={Project3}
-            alt=" cakes of paradise "
-          />
+          <Link to="/project3">
+            {" "}
+            <img
+              className="h-[80%] w-full rounded-md shadow-lg"
+              src={Project3}
+              alt=" cakes of paradise "
+            />
+          </Link>
+
           <br />
           <div className="flex justify-between">
             <div className="flex justify-start ">POKEMON SEARCH</div>
@@ -91,11 +100,14 @@ const Projects = () => {
           transition={{ duration: 0.8 }}
           className="  h-[300px] w-[90%] md:w-[40%] m-5 my-10 rounded-md"
         >
-          <img
-            className="h-[80%] w-full rounded-md shadow-lg"
-            src={Project4}
-            alt=" cakes of paradise "
-          />
+          <Link to="/project4">
+            <img
+              className="h-[80%] w-full rounded-md shadow-lg"
+              src={Project4}
+              alt=" cakes of paradise "
+            />
+          </Link>
+
           <br />
           <div className="flex justify-between">
             <div className="flex justify-start ">MY PORTFOLIO</div>

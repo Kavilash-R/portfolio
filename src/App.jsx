@@ -5,6 +5,10 @@ import About from "./components/About";
 import Tech from "./components/Tech";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import Project1 from "./components/allProjects/Project1";
+import Project4 from "./components/allProjects/Project4";
+import Project3 from "./components/allProjects/Project3";
+import Project2 from "./components/allProjects/Project2";
 
 function App() {
   const lightTheme =
@@ -30,17 +34,19 @@ function App() {
           <Route path="/about" element={<About />}></Route>
           <Route path="/tech" element={<Tech />}></Route>
           <Route path="/projects" element={<Projects />}></Route>
-
-          {/* <Route path="/contact" element={<Contact />}></Route> */}
+          <Route path="/project1" element={<Project1 />}></Route>
+          <Route path="/project2" element={<Project2 />}></Route>
+          <Route path="/project3" element={<Project3 />}></Route>
+          <Route path="/project4" element={<Project4 />}></Route>
         </Routes>
         {/* <Home /> */}
-        <About />
+        {/* <About />
 
         <Tech />
         <br />
         <h2 className=" flex justify-center text-4xl">Projects</h2>
         <Projects />
-        <Contact />
+        <Contact /> */}
       </div>
     </div>
   );
