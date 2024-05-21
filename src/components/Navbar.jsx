@@ -115,14 +115,7 @@ const Navbar = () => {
           >
             <div className=" ">
               {" "}
-              <Linked
-                to="home"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={500}
-                className=" flex justify-center  font-bold py-5 text-2xl underline"
-              >
+              <Linked className=" flex justify-center  font-bold py-5 text-2xl underline">
                 Portfolio
                 <AiOutlineClose
                   className="flex ml-5 mt-2 cursor-pointer"

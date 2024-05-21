@@ -16,7 +16,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 const Home = () => {
   const handleCopy = () => {
-    navigator.clipboard.writeText("kavilashravi@gamil.com");
+    navigator.clipboard.writeText("kavilashravi@gmail.com");
     toast("Email copied!");
   };
   const handleCopy2 = () => {
