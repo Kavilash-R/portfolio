@@ -44,7 +44,7 @@ const Home = () => {
                 initial={{ x: -100, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 1 }}
-                className="text-4xl lg:text-6xl bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text tracking-wide text-transparent"
+                className="text-3xl lg:text-6xl bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text tracking-wide text-transparent"
               >
                 {" "}
                 Full Stack Developer
