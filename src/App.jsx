@@ -39,14 +39,6 @@ function App() {
           <Route path="/project3" element={<Project3 />}></Route>
           <Route path="/project4" element={<Project4 />}></Route>
         </Routes>
-        {/* <Home /> */}
-        {/* <About />
-
-        <Tech />
-        <br />
-        <h2 className=" flex justify-center text-4xl">Projects</h2>
-        <Projects />
-        <Contact /> */}
       </div>
     </div>
   );
@@ -72,4 +64,17 @@ export default App;
 </div>;
 
 <div class="absolute top-0 z-[-2] h-screen w-screen bg-white bg-[radial-gradient(100%_50%_at_50%_0%,rgba(0,163,255,0.13)_0,rgba(0,163,255,0)_50%,rgba(0,163,255,0)_100%)]"></div>; */
+}
+
+{
+  /* <Home /> */
+}
+{
+  /* <About />
+
+        <Tech />
+        <br />
+        <h2 className=" flex justify-center text-4xl">Projects</h2>
+        <Projects />
+        <Contact /> */
 }
