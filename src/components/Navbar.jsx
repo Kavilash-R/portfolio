@@ -36,16 +36,12 @@ const Navbar = () => {
         </div>
         <div className="text-xl w-full flex justify-end gap-4 lg:gap-7 items-center">
           <div className="nav-item">
-            <ScrollLink
-              to="home"
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={500}
+            <Link
+              to="/"
               className="dark:hover:text-blue-700 hover:text-teal-200 hover:-translate-y-[0.100rem] hidden lg:block cursor-pointer"
             >
               Home
-            </ScrollLink>
+            </Link>
           </div>
 
           <div className="nav-item">

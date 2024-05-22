@@ -9,6 +9,7 @@ import Project1 from "./components/allProjects/Project1";
 import Project4 from "./components/allProjects/Project4";
 import Project3 from "./components/allProjects/Project3";
 import Project2 from "./components/allProjects/Project2";
+import { useEffect } from "react";
 
 function App() {
   const lightTheme =
