@@ -37,7 +37,7 @@ const Navbar = () => {
         <div className="text-xl w-full flex justify-end gap-4 lg:gap-7 items-center">
           <div className="nav-item">
             <ScrollLink
-              to="about"
+              to="home"
               spy={true}
               smooth={true}
               offset={-100}
