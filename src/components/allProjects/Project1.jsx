@@ -6,6 +6,7 @@ import { RiExternalLinkLine } from "react-icons/ri";
 
 const Project1 = () => {
   return (
+    
     <div className="min-h-screen w-full overflow-hidden">
       <div className="h-full justify-center text-xl lg:text-3xl">
         {/* Header */}
